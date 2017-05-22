@@ -1,0 +1,24 @@
+{
+  "name": "demo_proforce",
+  "description": "The admin microservice of demo_proforce",
+  "website": "http://www.forestadmin.com/lumber",
+  "repository": "https://github.com/ForestAdmin/lumber",
+  "env": {
+    "FOREST_AUTH_SECRET": {
+      "description": "A random JWT signing secret to protect your admin API",
+      "value": "0afbb9fd39b1736ce717538df1b94fcd5fc3942914bbb943c8f275013b019cdeaa0a1fc629f628de1b678e7e34c077bc"
+    },
+    "FOREST_ENV_SECRET": {
+      "description": "The Forest environment secret",
+      "value": "ce608e207be0fcb0c55765288302789daad7df92f53eed6947f755f648553026"
+    },
+    "DATABASE_URL": {
+      "description": "The remote database connection URL",
+      "value": "mysql://<user>:<password>@<host>:<port>/<databaseName>"
+    },
+    "SSL_DATABASE": {
+      "description": "Specify if a SSL database connection is required.",
+      "value": "true"
+    }
+  }
+}
